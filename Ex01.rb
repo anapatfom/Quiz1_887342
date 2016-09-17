@@ -1,6 +1,5 @@
-US_states = 
-
-	{"Alabama" => "AL",
+US_states = {
+    "Alabama" => "AL",
 	"Alaska" => "AK",
 	"Arizona" => "AZ",
 	"Arkansas" => "AR",
@@ -50,22 +49,30 @@ US_states =
 	"Washington" => "WA",
 	"West Virginia" => "WV",
 	"Wisconsin" => "WI",
-	"Wyoming" => "WY"}
+	"Wyoming" => "WY"
+}
 
 
+
+puts "\n================== First and Last (T or N) ==================\n"
 US_states.each{|key,val|
     n = val.length-1
     if (val[n] == "T") || (val[n] == "N")
         puts val
     end
 }
-puts "\n===============================================\n"
+puts "\n====================== END ======================\n\n\n"
 
+
+
+puts "\n==================== Sort ====================\n"
 US_states_sort = US_states.sort{|val1, val2| val2 <=> val1}
 US_states_sort.each{|key, val| puts key+" : "+val}
-puts "\n===============================================\n"
+puts "\n====================== END ======================\n\n\n"
 
 
+
+puts "\n==================== Vowel ====================\n"
 US_states.each{|key,val|
     n = key.length-1
     tem = key.downcase
@@ -73,4 +80,4 @@ US_states.each{|key,val|
         puts key
     end
 }
-puts "\n===============================================\n"
+puts "\n====================== END ======================\n\n\n"
