@@ -1,16 +1,16 @@
 def prime_hash (n)
-    prime_hash = {}
+    prime_hash = Hash.new
     count = 0
-    (2..n).each { |i| 
+    (2..n).each { |num| 
         isPrime = true
-        (2..i/2).each { |l| 
-            if i%l == 0
+        (2..num/2).each { |divide| 
+            if num % divide == 0
                 isPrime = false
             end
         }
         if isPrime
             count += 1
-            prime_hash[:"p#{count}"] = i
+            prime_hash[:"p#{count}"] = num
         end
     }
     
