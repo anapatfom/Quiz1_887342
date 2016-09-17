@@ -14,9 +14,7 @@ def prime_hash (n)
         end
     }
     
-    prime_hash.each{|key,val|
-        puts "#{key} : #{val}"
-    }
+    #prime_hash.each{ |key,val| puts "#{key} : #{val}" }
     return prime_hash
 end
 
